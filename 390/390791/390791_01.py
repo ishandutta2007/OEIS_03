@@ -10,17 +10,15 @@ def make_CnXPk(n, k):
         for j in range(1, k):
             grids.append((i + j - 1, i + j))
     return grids
-
 def A390791(n):
     universe = make_CnXPk(4, 2 * n + 2)
     GraphSet.set_universe(universe)
     start, goal = 1, 3 * (2 * n + 2)
     paths = GraphSet.paths(start, goal, is_hamilton=True)
     return paths.len()
-
-# print([A390791(n) for n in range(0, 18)])
-for n in range(0, 200 + 1):
-   print(n, A390791(n))
+print([A390791(n) for n in range(0, 18)])
+# for n in range(0, 200 + 1):
+#    print(n, A390791(n))
 
 # def A(start, goal, n, k):
 #     universe = make_CnXPk(n, k)
