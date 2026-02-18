@@ -12,5 +12,5 @@ def A(n, k)
   cnt
 end
 
-p (0..60).map{|i| A(i, 5)}
+p (0..50).map{|i| A(i, 5)}
 
