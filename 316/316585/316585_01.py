@@ -80,8 +80,8 @@ def main() -> None:
         "n",
         type=int,
         nargs="?",
-        default=200,
-        help="a(0) から a(n) までを出力 (default: 200)",
+        default=5000,
+        help="a(0) から a(n) までを出力 (default: 5000)",
     )
     args = parser.parse_args()
 
